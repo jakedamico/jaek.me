@@ -7,15 +7,15 @@ const Page = () => {
                 Hello, I&apos;m a Computer Science student from Cincinnati!
             </Box>
 
-            <Box display={{md:'flex'}}>
+            <Box display={{ md: 'flex' }}>
                 <Box flexGrow={1}>
                     <Heading as="h2" variant="page-title">
                         Jake D'Amico
                     </Heading>
                     <p>Digital Craftsman ( Developer / Designer )</p>
                 </Box>
-            </Box> 
-        </Container> 
+            </Box>
+        </Container>
     )
 }
 
