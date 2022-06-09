@@ -1,5 +1,17 @@
-import { Container, Box, Heading, Image, useColorModeValue } from '@chakra-ui/react'
+import NextLink from 'next/link'
+import {
+    Container,
+    Button,
+    Box,
+    Heading,
+    Image,
+    Link,
+    useColorModeValue
+} from '@chakra-ui/react'
 import Section from '../components/section'
+import Paragraph from '../components/paragraph'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
     return (
@@ -38,7 +50,51 @@ const Page = () => {
                 <Heading as="h3" variant="section-title">
                     Work
                 </Heading>
-                <p>Paragraph</p>
+                <Paragraph>
+                    Jake is an aspiring software engineer based in
+                    Ohio with a passion for web development and application engineering.
+                    He also takes pride in his work in other interests such as launching products, finance and systematic trading,
+                    as well as brand design. While he's an engineer and problem solver at heart, his other skills in business and design help
+                    tremendously in being a well-rounded craftsman.
+                </Paragraph>
+                <Box align="center" my={4}>
+                    <NextLink href="/works">
+                        <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                            My portfolio
+                        </Button>
+                    </NextLink>
+                </Box>
+            </Section>
+
+            <Section delay={0.2}>
+                <Heading as="h3" variant="section-title">
+                    Bio
+                </Heading>
+                <BioSection>
+                    <BioYear>2001</BioYear>
+                    Born and raised just south of Dayton, OH.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2019</BioYear>
+                    Graduates from Springboro High School.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2019</BioYear>
+                    Enrolls in the Computer Science program at the University of Cincinnati.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2022</BioYear>
+                    Works first internship at Siemens developing the Solutionlink website, spring and fall semesters.
+                </BioSection>
+            </Section>
+
+            <Section delay={0.3}>
+                <Heading as="h3" variant="section-title">
+                    I ♥
+                </Heading>
+                <Paragraph>
+                    Music, Digital Design, Fiance, Lifting Weights, and Web Development
+                </Paragraph>
             </Section>
         </Container>
     )
