@@ -90,7 +90,7 @@ const Page = () => {
 
             <Section delay={0.3}>
                 <Heading as="h3" variant="section-title">
-                    I ♥
+                    My Passions
                 </Heading>
                 <Paragraph>
                     Music, Digital Design, Fiance, Lifting Weights, and Web Development
